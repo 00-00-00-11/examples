@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.0",
     "gencord": "0.0.6",
     "mongoose": "^5.11.18"
   }

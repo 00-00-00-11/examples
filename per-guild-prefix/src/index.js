@@ -1,6 +1,5 @@
 const { Client } = require("gencord");
 const mongoose = require("mongoose");
-const chalk = require("chalk");
 const { token, mongo } = require("../config.json");
 const Prefix = require("./Prefix");
 
@@ -20,10 +19,10 @@ const getPrefix = async (guildID) => {
 };
 
 client.on("READY", () => {
-  console.log(chalk.red("Ready!"));
+  console.log("Ready!");
   mongoose
     .connect(mongo, { useUnifiedTopology: true, useNewUrlParser: true })
-    .then((_) => console.log(chalk.greenBright("Connected to MongoDB")));
+    .then((_) => console.log("Connected to MongoDB"));
 });
 
 client.on("message", async (message) => {
