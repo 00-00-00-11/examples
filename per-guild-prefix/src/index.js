@@ -6,7 +6,7 @@ const Prefix = require("./Prefix");
 const client = new Client({
   token: token,
   intents: 513,
-  status: "dnd",
+  status: "online",
 });
 
 const getPrefix = async (guildID) => {
